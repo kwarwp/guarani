@@ -7,9 +7,10 @@ sckoolhouse = "https://i.imgur.com/oXsdN2c.jpg"
 def claudemilsonarevolta():
     cenasckoolhouse = Cena("https://i.imgur.com/oXsdN2c.jpg")
     wardrobe = Elemento ("https://i.imgur.com/FmhekcD.jpg", tit = "toy", style = dict(left = 150, top = 60, widht = 60, height = 200))
-    txtwardrobe = (cenasckoolhouse,"Become Claudemilson")
-    cenasckoolhouse.vai()
+    txtwardrobe = Texto(cenasckoolhouse,"Become Claudemilson")
     wardrobe.entra(cenasckoolhouse)
+    wardrobe.vai = txtwardrobe.vai
+    cenasckoolhouse.vai()
     
     
 claudemilsonarevolta()
