@@ -1,2 +1,5 @@
 from _spy.vittolino.main import Cena, Elemento, Texto
-https://i.imgur.com/yAlpsYW.jpg
+schoolhousedoor = "https://i.imgur.com/yAlpsYW.jpg"
+
+def entrace():
+    cenaschoolhousedoor = Cena("https://i.imgur.com/yAlpsYW.jpg")
