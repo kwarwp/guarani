@@ -4,7 +4,7 @@ from _spy.vittolino.main import Cena, Elemento, Texto
 thedoglink = "http://videosdehumor.esy.es/wp-content/uploads/2016/01/caes-e-gatos-engracado-scared-da-520x245.jpg" 
 
 def Historia():
-     cenaParque = Cena(img = "http://www.fundospaisagens.com/Imagens/parque-com-arvores.jpg
+     cenaParque = Cena(img = "http://www.fundospaisagens.com/Imagens/parque-com-arvores.jpg"
      
 
 
