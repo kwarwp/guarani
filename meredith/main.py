@@ -7,10 +7,9 @@ AA_LESTE = "https://i.imgur.com/igo5R2I.jpg"
 AAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 AAAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 
-B_NORTE = "https://i.imgur.com/40K5493.png"
-B_LESTE = "https://i.imgur.com/R3bpFXD.png"
-B_OESTE = "https://i.imgur.com/dlxY8hi.png"
-B_SUL = "https://i.imgur.com/eYM3Yp9.png"
+B_NORTE = "https://i.imgur.com/xfzO6t4.jpg"
+B_LESTE = "https://i.imgur.com/JFyws1c.jpg"
+B_SUL = "https://i.imgur.com/Z3FJXmx.jpg"
 
 C_LESTE = "https://i.imgur.com/94V79TA.png"
 C_NORTE = "https://i.imgur.com/YJfnhy9.png"
