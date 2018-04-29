@@ -75,13 +75,11 @@ def criarsalas():
 
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL, esquerda=b_leste)
- b_oeste = Cena(img=B_OESTE, esquerda=b_sul, direita=b_norte)
  b_norte.direita = b_leste
  b_norte.esquerda = b_oeste   
  b_leste.direita = b_sul
  b_leste.esquerda = b_norte
  b_sul.direita = b_oeste
- b_oeste.meio = a_leste
  c_leste= Cena(img=C_LESTE)
  b_leste.meio = c_leste
  
