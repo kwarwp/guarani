@@ -1,10 +1,11 @@
-
 from _spy.vitollino.main import Cena, Texto, Elemento
 from _spy.vitollino.main import INVENTARIO as inv
 
-A_NORTE = "https://i.imgur.com/aLEjWgB.png"
+
 A_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
-A_SUL = "https://i.imgur.com/otHJhF0.png"
+AA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
+AAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
+AAAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 
 B_NORTE = "https://i.imgur.com/40K5493.png"
 B_LESTE = "https://i.imgur.com/R3bpFXD.png"
@@ -60,13 +61,17 @@ PANO = "http://www.removermanchas.net/wp-content/uploads/2012/11/Remover-nodoa-s
 
 
 def criarsalas():
- a_norte = Cena(img=A_NORTE)
- a_leste = Cena(img=A_LESTE, esquerda=a_norte)
- a_sul = Cena(img=A_SUL, esquerda=a_leste)
- a_norte.direita = a_leste
- a_leste.direita = a_sul
+ a_leste = Cena(img=A_LESTE)
+ aa_leste = Cena(img=AA_LESTE)
+ a_leste.meio = aa_leste
+ 
+ aa_leste = Cena(img=AA_LESTE)
+ aaa_leste = Cena(img=AAA_LESTE)
+ aa_leste.meio = aaa_leste
+ 
+ aaa_leste = Cena(img=AAA_LESTE)
  b_leste = Cena(img=B_LESTE)
- a_leste.meio = b_leste
+ aaa_leste.meio = b_leste
     
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL, esquerda=b_leste)
