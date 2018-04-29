@@ -1,9 +1,7 @@
 from _spy.vitollino.main import Cena, Texto, Elemento
 from _spy.vitollino.main import INVENTARIO as inv
 
-A_NORTE = "https://i.imgur.com/aLEjWgB.png"
-A_LESTE = "https://i.imgur.com/sivjAnO.png"
-A_SUL = "https://i.imgur.com/otHJhF0.png"
+A_NORTE = "https://i.imgur.com/X7PsGxv.jpg"
 
 B_NORTE = "https://i.imgur.com/40K5493.png"
 B_LESTE = "https://i.imgur.com/R3bpFXD.png"
