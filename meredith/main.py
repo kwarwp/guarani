@@ -68,7 +68,6 @@ def criarsalas():
  b_leste.direita = b_sul
  b_leste.esquerda = b_norte
  b_sul.direita = b_oeste
- b_oeste.meio = a_leste
  c_leste= Cena(img=C_LESTE)
  b_leste.meio = c_leste
  
