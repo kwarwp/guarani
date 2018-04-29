@@ -1,10 +1,10 @@
 from _spy.vitollino.main import Cena, Texto, Elemento, STYLE
 from _spy.vitollino.main import INVENTARIO as inv
 
-STYLE["width"]=800
+STYLE["width"]=600
 
 A_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
-AA_LESTE = "https://i.imgur.com/OYgOQVV.jpg"
+AA_LESTE = "https://i.imgur.com/OYg0QVV.jpg"
 AAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 AAAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 
