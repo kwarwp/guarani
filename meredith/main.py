@@ -14,7 +14,7 @@ B_SUL = "https://i.imgur.com/Z3FJXmx.jpg"
 
 C_LESTE = "https://i.imgur.com/tJNPqJY.jpg"
 C_NORTE = "https://i.imgur.com/aitFEW3.jpg"
-C_OESTE = "https://i.imgur.com/evUel73.jpg"
+C_OESTE = "https://i.imgur.com/evUeI73.jpg"
 C_SUL = "https://i.imgur.com/PJ5o0Oi.jpg"
 
 D_NORTE = "http://i.imgur.com/1uWH7rU.png"
