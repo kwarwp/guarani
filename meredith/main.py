@@ -91,7 +91,7 @@ def criarsalas():
  c_leste.esquerda = c_norte
  c_sul.direita = c_oeste
  d_sul = Cena(img=D_SUL)
- c_sul.meio = d_sul
+ c_leste.meio = d_sul
  
  bau = Elemento(img=TRANSPARENTE, tit="bau misterioso", style=dict(left=150, top=160, width=60, height=30))
  bau.entra(c_leste)
