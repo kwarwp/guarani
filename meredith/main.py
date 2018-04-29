@@ -59,7 +59,6 @@ PANO = "http://www.removermanchas.net/wp-content/uploads/2012/11/Remover-nodoa-s
 def criarsalas():
  a_norte = Cena(img=A_NORTE)
  b_leste = Cena(img=B_LESTE)
- a_leste.meio = b_leste
     
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL, esquerda=b_leste)
