@@ -14,7 +14,7 @@ B_SUL = "https://i.imgur.com/Z3FJXmx.jpg"
 
 C_LESTE = "https://i.imgur.com/tJNPqJY.jpg"
 C_NORTE = "https://i.imgur.com/aitFEW3.jpg"
-C_OESTE = "https://i.imgur.com/evUeI73.jpg"
+C_OESTE = "https://i.imgur.com/evUel73.jpg"
 C_SUL = "https://i.imgur.com/PJ5o0Oi.jpg"
 
 D_NORTE = "http://i.imgur.com/1uWH7rU.png"
@@ -84,7 +84,7 @@ def criarsalas():
  
  c_norte = Cena(img=C_NORTE)
  c_sul = Cena(img=C_SUL, esquerda=c_leste)
- c_oeste = Cena(img=C_OESTE, esquerda=c_sul, direita=c_norte)
+ c_oeste = Cena(img=C_OESTE, esquerda=c_sul, direita=c_norte, meio=b_sul)
  c_norte.direita = c_leste
  c_norte.esquerda = c_oeste   
  c_leste.direita = c_sul
