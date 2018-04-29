@@ -3,7 +3,7 @@ from _spy.vitollino.main import INVENTARIO as inv
 
 
 A_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
-AA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
+AA_LESTE = "https://i.imgur.com/igo5R2I.jpg"
 AAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 AAAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 
@@ -65,14 +65,15 @@ def criarsalas():
  aa_leste = Cena(img=AA_LESTE)
  a_leste.meio = aa_leste
  
- aa_leste = Cena(img=AA_LESTE)
  aaa_leste = Cena(img=AAA_LESTE)
  aa_leste.meio = aaa_leste
  
- aaa_leste = Cena(img=AAA_LESTE)
+ aaaa_leste = Cena(img=AAAA_LESTE)
+ aaa_leste.meio = aaaa_leste
+
  b_leste = Cena(img=B_LESTE)
- aaa_leste.meio = b_leste
-    
+ aaaa_leste.meio = b_leste
+
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL, esquerda=b_leste)
  b_oeste = Cena(img=B_OESTE, esquerda=b_sul, direita=b_norte)
