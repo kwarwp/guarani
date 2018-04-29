@@ -164,7 +164,7 @@ def criarsalas():
  j_norte.meio = e_norte
  k_leste = Cena(img=K_LESTE)
  j_leste.meio = k_leste
-  saidabloq = Elemento(img=TRANSPARENTE, tit="saida bloqueada", style=dict(left=100, top=100, width=150, height=200))
+ saidabloq = Elemento(img=TRANSPARENTE, tit="saida bloqueada", style=dict(left=100, top=100, width=150, height=200))
  saidabloq.entra(j_sul)
  vai = Texto(j_sul, "Esta saÃ­da estÃ¡ bloqueada")
  saidabloq.vai = vai.vai
