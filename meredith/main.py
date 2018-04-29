@@ -5,8 +5,8 @@ STYLE["width"]=500
 
 A_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
 AA_LESTE = "https://i.imgur.com/OYg0QVV.jpg"
-AAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
-AAAA_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
+AAA_LESTE = "https://i.imgur.com/KSKp6m9.jpg"
+AAAA_LESTE = "https://i.imgur.com/zpBpD2U.jpg"
 
 B_NORTE = "https://i.imgur.com/xfzO6t4.jpg"
 B_LESTE = "https://i.imgur.com/JFyws1c.jpg"
