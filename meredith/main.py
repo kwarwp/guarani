@@ -1,7 +1,10 @@
+
 from _spy.vitollino.main import Cena, Texto, Elemento
 from _spy.vitollino.main import INVENTARIO as inv
 
-A_NORTE = "https://i.imgur.com/X7PsGxv.jpg"
+A_NORTE = "https://i.imgur.com/aLEjWgB.png"
+A_LESTE = "https://i.imgur.com/X7PsGxv.jpg"
+A_SUL = "https://i.imgur.com/otHJhF0.png"
 
 B_NORTE = "https://i.imgur.com/40K5493.png"
 B_LESTE = "https://i.imgur.com/R3bpFXD.png"
@@ -58,7 +61,12 @@ PANO = "http://www.removermanchas.net/wp-content/uploads/2012/11/Remover-nodoa-s
 
 def criarsalas():
  a_norte = Cena(img=A_NORTE)
+ a_leste = Cena(img=A_LESTE, esquerda=a_norte)
+ a_sul = Cena(img=A_SUL, esquerda=a_leste)
+ a_norte.direita = a_leste
+ a_leste.direita = a_sul
  b_leste = Cena(img=B_LESTE)
+ a_leste.meio = b_leste
     
  b_norte = Cena(img=B_NORTE)
  b_sul = Cena(img=B_SUL, esquerda=b_leste)
@@ -68,6 +76,7 @@ def criarsalas():
  b_leste.direita = b_sul
  b_leste.esquerda = b_norte
  b_sul.direita = b_oeste
+ b_oeste.meio = a_leste
  c_leste= Cena(img=C_LESTE)
  b_leste.meio = c_leste
  
@@ -85,7 +94,7 @@ def criarsalas():
  
  bau = Elemento(img=TRANSPARENTE, tit="bau misterioso", style=dict(left=150, top=160, width=60, height=30))
  bau.entra(c_leste)
- cbau = Texto(c_leste, "A morte estÃÂ¡ prÃÂ³xima")
+ cbau = Texto(c_leste, "A morte está próxima")
  #inv.bota(bau, "bau", vai.vai)
  bau.vai = cbau.vai
  
@@ -115,17 +124,17 @@ def criarsalas():
  
  chave = Elemento(img=CHAVE, tit="chave", style=dict(left=200, top=180, width=30, height=15))
  chave.entra(h_leste)
- cchave = Texto(h_leste, "NÃÂ£o sei o que abre")
+ cchave = Texto(h_leste, "Não sei o que abre")
  chave.vai = cchave.vai
  
  sangue = Elemento(img=TRANSPARENTE, tit="sangue", style=dict(left=80, top=230, width=25, height=15))
  sangue.entra(h_sul)
  vai = Texto(h_sul, "Nossa, quanto sangue")
  sangue.vai = vai.vai
-  
+ 
  espada = Elemento(img=TRANSPARENTE, tit="espada", style=dict(left=0, top=60, width=70, height=200))
  espada.entra(h_leste)
- vai = Texto(h_leste, "A espada foi criada no ano I a.C. e ÃÂ© uma ÃÂ³tima arma para causar ferimentos")
+ vai = Texto(h_leste, "A espada foi criada no ano I a.C. e é uma ótima arma para causar ferimentos")
  espada.vai = vai.vai
  
  i_oeste = Cena(img=I_OESTE)
@@ -141,7 +150,7 @@ def criarsalas():
  
  folhangue = Elemento(img=FOLHANGUE, tit="papel", style=dict(left=100, top=200, width=40, height=25))
  folhangue.entra(i_leste)
- vai = Texto(i_leste, "As manchas de sangue impedem de ler tudo! PorÃÂ©m vocÃÂª consegue ler 'SOCORRO! AlguÃÂ©m...'")
+ vai = Texto(i_leste, "As manchas de sangue impedem de ler tudo! Porém você consegue ler 'SOCORRO! Alguém...'")
  folhangue.vai = vai.vai
  
  j_oeste = Cena(img=J_OESTE)
@@ -156,9 +165,10 @@ def criarsalas():
  j_norte.meio = e_norte
  k_leste = Cena(img=K_LESTE)
  j_leste.meio = k_leste
+ 
  saidabloq = Elemento(img=TRANSPARENTE, tit="saida bloqueada", style=dict(left=100, top=100, width=150, height=200))
  saidabloq.entra(j_sul)
- vai = Texto(j_sul, "Esta saÃÂ­da estÃÂ¡ bloqueada")
+ vai = Texto(j_sul, "Esta saída está bloqueada")
  saidabloq.vai = vai.vai
  
  e_oeste = Cena(img=E_OESTE, direita=e_norte)
@@ -172,7 +182,7 @@ def criarsalas():
  
  carta = Elemento(img=CARTA, tit="carta", style=dict(left=200, top=115, width=50, height=10))
  carta.entra(e_oeste)
- vai = Texto(e_oeste, "A vida nÃÂ£o ÃÂ© boa mais. NÃÂ£o hÃÂ¡ esperanÃÂ§a. Adeus, mundo cruel!")
+ vai = Texto(e_oeste, "A vida não é boa mais. Não há esperança. Adeus, mundo cruel!")
  carta.vai = vai.vai
  
  k_oeste = Cena(img=K_OESTE)
@@ -188,7 +198,7 @@ def criarsalas():
  
  pano = Elemento(img=PANO, tit="pano", style=dict(left=170, top=230, width=40, height=10))
  pano.entra(k_norte)
- vai = Texto(k_norte, "O pano estÃÂ¡ cheio de sangue")
+ vai = Texto(k_norte, "O pano está cheio de sangue")
  pano.vai = vai.vai
  
  
