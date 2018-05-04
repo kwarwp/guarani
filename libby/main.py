@@ -6,8 +6,8 @@ CASAL = "https://www.temporadalivre.com/blog/wp-content/uploads/casal-sem-crise-
 def boyfriendsatthecamp():
     campo = Cena (img = CAMPO)
     casal = Elemento(img = CASAL, tit = "casal", style = dict(left = 150, top = 60, height = 200))
-    casal_t = Texto(casal,"let's eat something!")
-    casal_t.entra(campo)
+    txtcasal = Texto(casal,"let's eat something!")
+    txtcasal.entra(campo)
     casal.vai = dog_t.vai
     campo.vai()
     
