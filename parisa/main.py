@@ -3,3 +3,4 @@ schoolhousedoor = "https://i.imgur.com/yAlpsYW.jpg"
 
 def entrace():
     cenaschoolhousedoor = Cena("https://i.imgur.com/yAlpsYW.jpg")
+    
