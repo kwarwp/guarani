@@ -8,7 +8,7 @@ def boyfriendsatthecamp():
     casal = Elemento(img = CASAL, tit = "casal", style = dict(left = 150, top = 60, height = 200))
     txtcasal = Texto(casal,"let's eat something!")
     txtcasal.entra(campo)
-    casal.vai = dog_t.vai
+    casal.vai = txtcasal.vai
     campo.vai()
     
     
