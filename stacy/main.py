@@ -14,7 +14,7 @@ def dogatthebeach():
     funnydog.vai = txtfunnydog.vai
     beach.vai()
     lixo = Cena ("http://portaljfonte.com.br/wp-content/uploads/2017/10/lixoI.jpg")
-    dollynho = Elemento("https://lh3.ggpht.com/vshyoy6DTJtuLpXrqKesDJkJebNmpq7yTI-HUr7ICZ_jOe_xXBEWaGmYDrnbVDZxwA=w300")
+    dollynho = Elemento("https://lh3.ggpht.com/vshyoy6DTJtuLpXrqKesDJkJebNmpq7yTI-HUr7ICZ_jOe_xXBEWaGmYDrnbVDZxwA=w300", tit = "DOLLYNHO",  style = dict(left = 150, top = 60, widht = 60, height = 200))
     txtdollynho = Texto(lixo,"who called me?")
     dollynho.entra(lixo)
     dollynho.vai = txtfunnydog.vai
