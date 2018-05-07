@@ -4,6 +4,14 @@ STYLE["width"] = 800
 children = "https://i.imgur.com/4fTrn8X.jpg"
 toy = "https://i.imgur.com/57cOaZ9.jpg"
 sckoolhouse = "https://i.imgur.com/oXsdN2c.jpg"
+leyden  = "https://i.imgur.com/abeXKwL.jpg"
+volcano  = "https://i.imgur.com/4Y5aie8.jpg"
+globe  = "https://i.imgur.com/EQtHzod.jpg"
+ball  = "https://i.imgur.com/rBbRsFU.jpg"
+trig_s  = "https://i.imgur.com/9ZcjTjb.jpg"
+trig_s  = "https://i.imgur.com/abeXKwL.jpg"
+trig_s  = "https://i.imgur.com/abeXKwL.jpg"
+trig_s  = "https://i.imgur.com/abeXKwL.jpg"
 
 def claudemilsonarevolta():
     cenasckoolhouse = Cena("https://i.imgur.com/oXsdN2c.jpg")
