@@ -18,8 +18,8 @@ def dogatthebeach():
     txtdollynho = Texto(lixo,"who called me?")
     dollynho.entra(lixo)
     dollynho.vai = txtfunnydog.vai
-    lixo.vai
     beach.direita = lixo
+    lixo.vai()
     
     
 dogatthebeach()
