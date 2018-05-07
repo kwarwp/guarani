@@ -19,6 +19,7 @@ def dogatthebeach():
     dollynho.entra(lixo)
     dollynho.vai = txtfunnydog.vai
     beach.direita = lixo
+    lixo.esquerda = beach
     lixo.vai()
     
     
