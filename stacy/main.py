@@ -17,7 +17,7 @@ def dogatthebeach():
     dollynho = Elemento("https://lh3.ggpht.com/vshyoy6DTJtuLpXrqKesDJkJebNmpq7yTI-HUr7ICZ_jOe_xXBEWaGmYDrnbVDZxwA=w300", tit = "DOLLYNHO",  style = dict(left = 25, top = 60, widht = 60, height = 25))
     txtdollynho = Texto(lixo,"who called me?")
     dollynho.entra(lixo)
-    dollynho.vai = txtfunnydog.vai
+    dollynho.vai = txtdollynho.vai
     beach.direita = lixo
     lixo.esquerda = beach
     lixo.vai()
