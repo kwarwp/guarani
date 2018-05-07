@@ -1,6 +1,5 @@
 # grete.courtney.main.py
-from _spy.vitollino.main import Cena,Elemento,Texto_STYLE
-STYLE["witdh"] = 1500
+from _spy.vitollino.main import Cena,Elemento,Texto
 children = "https://i.imgur.com/4fTrn8X.jpg"
 toy = "https://i.imgur.com/57cOaZ9.jpg"
 sckoolhouse = "https://i.imgur.com/oXsdN2c.jpg"
