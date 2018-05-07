@@ -7,7 +7,7 @@ sckoolhouse = "https://i.imgur.com/oXsdN2c.jpg"
 
 def claudemilsonarevolta():
     cenasckoolhouse = Cena("https://i.imgur.com/oXsdN2c.jpg")
-    children = Elemento("https://i.imgur.com/4fTrn8X.jpg",tit = "children", style = dict(left = 800, top = 10, width = 352, maxHeight = 100))
+    children = Elemento("https://i.imgur.com/4fTrn8X.jpg",tit = "children", style = dict(left = 800, top = 0, width = 352, maxHeight = 100))
     txtchildren = Texto(cenasckoolhouse,"please, help me")
     children.entra(cenasckoolhouse)
     children.vai = txtchildren.vai
