@@ -19,15 +19,15 @@ def trigonometria():
     s_trig = Cena(trig_s, esquerda=e_trig)
     o_trig = Cena(trig_o, esquerda=s_trig, direita=n_trig)
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
-    s_trig.direita, e_trig.direita = e_trig, s_trig
-    chistyle = dict(left = 800, top = 10, width = 100, maxHeight = "100px")
+    s_trig.direita, e_trig.direita = o_trig, s_trig
+    chistyle = dict(left = 610, top = 90, width = 80, maxHeight = "80px")
     #chistyle.update({"max-height" = 200})
-    children = Elemento("https://i.imgur.com/4fTrn8X.jpg",tit = "children",
+    vdgball = Elemento(ball,tit = "earth globe",
     style=chistyle)
     txtchildren = Texto(n_trig,"please, help me")
-    children.entra(n_trig)
-    children.vai = txtchildren.vai
-    o_trig.vai()
+    vdgball.entra(e_trig)
+    vdgball.vai = txtchildren.vai
+    e_trig.vai()
     
     
 trigonometria()
