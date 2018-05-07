@@ -2,6 +2,7 @@
 from _spy.vitollino.main import Cena,Elemento,Texto
 CAMPO = "https://image.freepik.com/fotos-gratis/paisagem-de-campo-de-golfe_1388-96.jpg"
 CASAL = "https://www.temporadalivre.com/blog/wp-content/uploads/casal-sem-crise-10-dicas-que-o-casal-necessita-para-ser-feliz.jpg"
+CACHORRINHO = "http://image.cachorrogato.com.br/textimages/cachorrinho-ideal" 
 
 def boyfriendsatthecamp():
     campo = Cena (img = CAMPO)
@@ -10,6 +11,6 @@ def boyfriendsatthecamp():
     casal.entra(campo)
     casal.vai = txtcasal.vai
     campo.vai()
-    
+    txtcasal = Texto( 
     
 boyfriendsatthecamp()
