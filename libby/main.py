@@ -11,6 +11,6 @@ def boyfriendsatthecamp():
     casal.entra(campo)
     casal.vai = txtcasal.vai
     campo.vai()
-    txtcasal = Texto( 
+    
     
 boyfriendsatthecamp()
