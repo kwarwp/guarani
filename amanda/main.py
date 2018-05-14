@@ -22,7 +22,7 @@ def trigonometria():
     INVENTARIO.inicia()
     n_trig = Cena(trig_n)
     e_trig = Cena(trig_e, esquerda=n_trig)
-    s_trig = Cena(trig_s, esquerda=e_trig)
+    s_trig = Cena(trig_s, esquerda=e_trig, meio=Cena(vai=vai_geo))
     o_trig = Cena(trig_o, esquerda=s_trig, direita=n_trig)
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
     s_trig.direita, e_trig.direita = o_trig, s_trig
