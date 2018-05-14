@@ -10,8 +10,11 @@ SGEO = "https://i.imgur.com/iybLHJK.jpg"
 OGEO = "https://i.imgur.com/js589HB.jpg"
 
 def geografia():
+    def vai_trigo():
+        from amanda.main import trigonometria
+        trigonometria()
     INVENTARIO.inicia()
-    n_geo = Cena(NGEO)
+    n_geo = Cena(NGEO, meio=Cena(vai=vai_trigo))
     e_geo = Cena(LGEO, esquerda=n_geo)
     s_geo = Cena(SGEO, esquerda=e_geo)
     o_geo = Cena(OGEO, esquerda=s_geo, direita=n_geo)
@@ -27,7 +30,7 @@ def geografia():
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(pan)).vai)
 
-    e_geo.vai()
+    s_geo.vai()
     
 
 if __name__ == "__main__":
