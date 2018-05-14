@@ -13,7 +13,6 @@ def geografia():
     def vai_trigo():
         from amanda.main import trigonometria
         trigonometria()
-    INVENTARIO.inicia()
     n_geo = Cena(NGEO, meio=Cena(vai=vai_trigo))
     e_geo = Cena(LGEO, esquerda=n_geo)
     s_geo = Cena(SGEO, esquerda=e_geo)
@@ -34,4 +33,5 @@ def geografia():
     
 
 if __name__ == "__main__":
+    INVENTARIO.inicia()
     geografia()
