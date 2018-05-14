@@ -16,8 +16,8 @@ trig_o  = "https://i.imgur.com/JD6oGRg.jpg"
 
 def trigonometria():
     def vai_geo():
-        from naomi.main import trigonometria
-        trigonometria()
+        from naomi.main import geografia
+        geografia()
 
     INVENTARIO.inicia()
     n_trig = Cena(trig_n)
