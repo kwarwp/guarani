@@ -30,13 +30,13 @@ def trigonometria():
     globstyle = dict(left = 160, top = 210, width = 80, maxHeight = "100px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
-        style=chistyle, cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
+        style=chistyle, cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(vdgball)).vai)
     eglobe = Elemento(globe, tit = "volcano", drag=True,
-        style=globstyle, cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
+        style=globstyle, cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(eglobe)).vai)
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        style=volcstyle, cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
+        style=volcstyle, cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(eglobe)).vai)
     txtchildren = Texto(n_trig,"please, help me")
     n_trig.vai()
