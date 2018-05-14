@@ -9,7 +9,7 @@ LGEO = "https://i.imgur.com/zb8RS7U.jpg"
 SGEO = "https://i.imgur.com/iybLHJK.jpg"
 OGEO = "https://i.imgur.com/js589HB.jpg"
 
-def geografia():
+def geografia(oeste=False):
     def vai_trigo():
         from amanda.main import trigonometria
         trigonometria()
@@ -29,7 +29,11 @@ def geografia():
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(pan)).vai)
 
-    s_geo.vai()
+    o_geo.vai() if oeste else s_geo.vai()
+    
+def geo_oeste():
+    geografia(oeste=True)
+    
     
 
 if __name__ == "__main__":
