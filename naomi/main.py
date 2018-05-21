@@ -14,6 +14,7 @@ OGEO = "https://i.imgur.com/js589HB.jpg"
 class Elemento(Element):
 
     def __init__(self, img="", vai=None, style={}, tit="", alt="",
+            x=0, y=0, w=100, h=100,
             cena=INVENTARIO, score={}, drag=False, drop='', **kwargs):
         self._auto_score = self.score if score else self._auto_score
         self.img = img
@@ -21,13 +22,14 @@ class Elemento(Element):
         self.vai = vai if vai else lambda _=0: None
         self.cena = cena
         self.opacity = 0
-        height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
-        height = height[:-2] if isinstance(height, str) and "px" in height else height
+        # height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
+        # height = height[:-2] if isinstance(height, str) and "px" in height else height
         self.style = dict(**PSTYLE)
         self.style.update(**{'position': 'absolute', 'overflow': 'hidden',
+                    'left': x, 'top': y, 'width':'{}px'.format(w), 'height':'{}px'.format(h),
                     'background-image': 'url({})'.format(img),
                     'background-position': '{} {}'.format(0, 0),
-                    'background-size': '{}px {}px'.format(style["width"], height),
+                    'background-size': '{}px {}px'.format(w, h)
         })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
@@ -130,11 +132,13 @@ def geografia(oeste=False):
     micstyle = dict(left = 610, top = 100, width = 80, maxHeight = "90px")
     panstyle = dict(left = 750, top = 110, width = 50, maxHeight = "230px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
-    mic = Elemento(MIC, tit = "sweep pan", drag=True, 
-        style=micstyle, cena=s_geo, vai=Texto(s_geo,"please, help me, fix my name",
+    mic = Elemento(MIC, tit = "sweep pan", drag=True,
+        x = 610, y = 100, w = 80, h = 90,
+        cena=s_geo, vai=Texto(s_geo,"please, help me, fix my name",
         foi=mic_foi ).vai )
     mic.do_drag(False)
     pan = Elemento(PAN, tit = "microscope", drag=False, drop="sweep pan",
+        x = 750, y = 110, w = 50, h = 230,
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(pan)).vai)
     
