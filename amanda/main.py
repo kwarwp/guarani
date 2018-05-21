@@ -1,5 +1,5 @@
 # grete.amanda.main.py
-from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO
+from _spy.vitollino.main import Cena,Texto,STYLE,Dragger, Droppable, INVENTARIO
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
@@ -26,19 +26,25 @@ def trigonometria():
     o_trig = Cena(trig_o, esquerda=s_trig, direita=n_trig)
     n_trig.esquerda, n_trig.direita = o_trig, e_trig
     s_trig.direita, e_trig.direita = o_trig, s_trig
+    from naomi.main import Elemento
     chistyle = dict(left = 610, top = 140, width = 80, maxHeight = "90px")
     globstyle = dict(left = 160, top = 210, width = 80, maxHeight = "100px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
+    '''
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
-        style=chistyle, cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
+        x = 610, y = 140, w = 80, h = 90,
+        cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(vdgball)).vai)
     eglobe = Elemento(globe, tit = "volcano", drag=True,
-        style=globstyle, cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
+        x = 160, y = 210, w = 80, h = 100,
+        cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(eglobe)).vai)
     volc = Elemento(volcano, tit = "glow ball", drop="volcano",
-        style=volcstyle, cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
+        x = 30, y = 500, w = 100, h = 120,
+        cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(eglobe)).vai)
     txtchildren = Texto(n_trig,"please, help me")
+    '''
     n_trig.vai()
 
 
