@@ -14,7 +14,7 @@ OGEO = "https://i.imgur.com/js589HB.jpg"
 class Elemento(Element):
 
     def __init__(self, img="", vai=None, style={}, tit="", alt="",
-            x=0, y=0, w=100, h=100,
+            x=0, y=0, w=100, h=100, texto=None,
             cena=INVENTARIO, score={}, drag=False, drop='', **kwargs):
         self._auto_score = self.score if score else self._auto_score
         self.img = img
@@ -22,6 +22,7 @@ class Elemento(Element):
         self.vai = vai if vai else lambda _=0: None
         self.cena = cena
         self.opacity = 0
+        self.texto=texto
         # height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
         # height = height[:-2] if isinstance(height, str) and "px" in height else height
         self.style = dict(**PSTYLE)
@@ -52,6 +53,9 @@ class Elemento(Element):
         #self.img.onmousedown = self.img_prevent
         self.do_drag(drag)
         self.do_drop(drop)
+
+    def do_texto(self, texto):
+        self.texto = Texto(self.cena, texto, foi=self.foi)
 
     def img_prevent(self, ev):
         ev.preventDefault()
