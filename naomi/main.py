@@ -132,7 +132,7 @@ def geografia(oeste=False):
     micstyle = dict(left = 610, top = 100, width = 80, maxHeight = "90px")
     panstyle = dict(left = 750, top = 110, width = 50, maxHeight = "230px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
-    mic = Elemento(MIC, tit = "sweep pan", drag=True,
+    mic = Elemento(MIC, tit = "sweep pan", drag=False,
         x = 610, y = 100, w = 80, h = 90,
         cena=s_geo, vai=Texto(s_geo,"please, help me, fix my name",
         foi=mic_foi ).vai )
