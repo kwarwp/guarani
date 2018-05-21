@@ -30,7 +30,7 @@ def trigonometria():
     chistyle = dict(left = 610, top = 140, width = 80, maxHeight = "90px")
     globstyle = dict(left = 160, top = 210, width = 80, maxHeight = "100px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
-    '''
+    
     vdgball = Elemento(ball, tit = "earth globe", drag=True,
         x = 610, y = 140, w = 80, h = 90,
         cena=o_trig, vai=Texto(o_trig,"please, help me, fix my name",
@@ -44,7 +44,7 @@ def trigonometria():
         cena=e_trig, vai=Texto(e_trig,"please, help me, fix my name",
         foi=lambda: INVENTARIO.bota(eglobe)).vai)
     txtchildren = Texto(n_trig,"please, help me")
-    '''
+    
     n_trig.vai()
 
 
