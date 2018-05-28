@@ -13,10 +13,13 @@ def claudemilsonarevolta():
         from naomi.main import geografia
         geografia()
         INVENTARIO.inicia()
-    n_schoolhouse = Cena(sckoolhouse_n)
-    e_schoolhouse = Cena(sckoolhouse_e, esquerda=n_sckoolhouse)
-    s_schoolhouse = Cena(sckoolhouse_s, esquerda=e_sckoolhouse, meio=Cena(vai=vai_geo))
-    o_sckoolhouse = Cena(sckoolhouse_o, esquerda=s_sckoolhouse, direita=n_sckoolhouse)
-    n_sckoolhouse.esquerda, n_sckoolhouse.direita = o_sckoolhouse, e_sckoolhouse
-    s_sckoolhouse.direita,e_sckoolhouse.direita = o_sckoolhouse, s_sckoolhouse
+    n_schoolhouse = Cena(schoolhouse_n)
+    e_schoolhouse = Cena(schoolhouse_l, esquerda=n_schoolhouse)
+    s_schoolhouse = Cena(schoolhouse_s, esquerda=e_schoolhouse)
+    o_schoolhouse = Cena(schoolhouse_o, esquerda=s_schoolhouse, direita=n_schoolhouse)
+    n_schoolhouse.esquerda, n_schoolhouse.direita = o_schoolhouse, e_schoolhouse
+    s_schoolhouse.direita,e_schoolhouse.direita = o_schoolhouse, s_schoolhouse
     from naomi.main import Elemento
+    n_schoolhouse.vai()
+    
+claudemilsonarevolta()
