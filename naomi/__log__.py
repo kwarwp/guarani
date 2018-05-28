@@ -28,3 +28,10 @@ SyntaxError: invalid syntax
     self.elt.title = texto
 AttributeError: 'Elemento' object has no attribute 'elt'
 '''},
+{'date': 'Mon May 28 2018 14:52:40.936 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 70
+  _texto = self.texto self.tit == self.title else CORRETO.format(self.tit)
+                       ^
+SyntaxError: invalid syntax
+'''},
