@@ -14,10 +14,10 @@ def aventurasnaescola():
     class4 = Cena (img = CLASS4)
     coracao = Cena (img = CORACAO)
     INVENTARIO.inicia()
-    class1 = Cena(class1)
-    class2 = Cena(class2, esquerda=class1)
-    class3 = Cena(class3, esquerda=class2)
-    class4 = Cena(class4, esquerda=class3, direita=class1)
+    class1 = Cena(CLASS1)
+    class2 = Cena(CLASS2, esquerda=class1)
+    class3 = Cena(CLASS3, esquerda=class2)
+    class4 = Cena(CLASS4, esquerda=class3, direita=class1)
     class1.esquerda, class1.direita = class4, class2
     class3.direita, class2.direita = class4, class3
     globos = Elemento(img = GLOBOS, tit = "globos", style = dict(left = 340, top = 55, widht = 55, height = 180))
