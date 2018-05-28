@@ -10,19 +10,19 @@ NGEO = "https://i.imgur.com/VzxARws.jpg"
 LGEO = "https://i.imgur.com/zb8RS7U.jpg"
 SGEO = "https://i.imgur.com/iybLHJK.jpg"
 OGEO = "https://i.imgur.com/js589HB.jpg"
-
+CORRECT = "My correct name: {}"
 class Elemento(Element):
 
     def __init__(self, img="", vai=None, style={}, tit="", alt="",
-            x=0, y=0, w=100, h=100, texto=None,
+            x=0, y=0, w=100, h=100, texto='',
             cena=INVENTARIO, score={}, drag=False, drop='', **kwargs):
         self._auto_score = self.score if score else self._auto_score
-        self.img = img
+        self.img, self.title = img, tit
         self._drag = self._over = self._drop = self._dover = lambda: None
-        self.vai = vai if vai else lambda _=0: None
         self.cena = cena
         self.opacity = 0
         self.texto=texto
+        self.vai = vai if vai else Texto(cena,texto, foi=self.foi ).vai
         # height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
         # height = height[:-2] if isinstance(height, str) and "px" in height else height
         self.style = dict(**PSTYLE)
@@ -66,8 +66,11 @@ class Elemento(Element):
         }
         #item_img.style = style
         #INVENTARIO.bota(mic)
-        self.do_drag(True)    
-        clone_mic = Elemento(self.img, tit = self.elt.title, drag=True, style=style, cena=INVENTARIO)
+        self.do_drag(False)
+        _texto = self.texto if self.tit == self.title else CORRETO.format(self.tit)
+        self.vai = Texto(self.cena, _texto).vai
+
+        clone_mic = Elemento(self.img, tit = self.title, drag=True, style=style, cena=INVENTARIO)
         clone_mic.entra(INVENTARIO)
 
     @property
@@ -128,8 +131,9 @@ class Elemento(Element):
         ev.preventDefault()
         ev.stopPropagation()
         src_id = ev.data['text']
-        alert(src_id)
         self.tit = doc[src_id].title
+        Texto(self.cena,"Finally, my correct name: {}".format(self.tit), foi=self.foi ).vai()
+        self.vai = Texto(self.cena, CORRECT.format(self.tit), foi=self.foi ).vai
         doc[src_id].remove()
 
 def geografia(oeste=False):
@@ -161,15 +165,23 @@ def geografia(oeste=False):
     micstyle = dict(left = 610, top = 100, width = 80, maxHeight = "90px")
     panstyle = dict(left = 750, top = 110, width = 50, maxHeight = "230px")
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
+    '''
     mic = Elemento(MIC, tit = "sweep pan", drag=False,
         x = 610, y = 100, w = 80, h = 90,
         cena=s_geo, vai=lambda *_: Texto(s_geo,"please, help me, fix my name",
         foi=mic.foi ).vai() )
-    mic.do_drag(False)
     pan = Elemento(PAN, tit = "microscope", drag=False, drop="sweep pan",
         x = 750, y = 110, w = 50, h = 230,
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
         foi=lambda *_: INVENTARIO.bota(pan)).vai)
+    '''
+    mic = Elemento(MIC, tit = "sweep pan", drag=False, drop="microscope",
+        x = 610, y = 100, w = 80, h = 90,
+        cena=s_geo, texto = "please, help me, fix my name")
+    #mic.do_drag(False)
+    pan = Elemento(PAN, tit = "microscope", drag=False, drop="sweep pan",
+        x = 750, y = 110, w = 50, h = 230,
+        style=panstyle, cena=e_geo, texto="please, help me, fix my name")
     
 
     o_geo.vai() if oeste else s_geo.vai()
