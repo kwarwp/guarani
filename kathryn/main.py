@@ -33,6 +33,6 @@ def aventurasnaescola():
     txtglobos = Texto(coracao,"Siiiim!!!!!")
     
     
-    aventurasnaescola()
+aventurasnaescola()
     
      
