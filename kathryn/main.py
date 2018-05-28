@@ -13,4 +13,4 @@ def aventurasnaescola():
     class4 = Cena (img = CLASS4)
     globos = Elemento(img = GLOBOS, tit = "globos", style = dict(left = 340, top = 55, widht = 55, height = 180))
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
-    txtleon = Texto(class1,"Eu quero viajar para cá")
+    txtleon = Texto(class1,"Eu quero viajar para cÃ¡")
