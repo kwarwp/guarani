@@ -34,7 +34,7 @@ class Elemento(Element):
         })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
-        self.elt = html.DIV(Id=tit, style=self.style)
+        self.elt = html.DIV(Id=tit, title=tit, style=self.style)
         self.xy = (-111, -111)
         self.scorer = dict(ponto=1, valor=cena.nome, carta=tit or img, casa=self.xy, move=None)
         self.scorer.update(score)
@@ -53,8 +53,32 @@ class Elemento(Element):
         #self.img.onmousedown = self.img_prevent
         self.do_drag(drag)
         self.do_drop(drop)
+        
+    def foi(self):
+        #mic.entra(INVENTARIO)
+        item_img = self.elt
+        #style = dict(item_img.style)
+        style = {'opacity': "inherited", 'width': 30, 'height': "30px", 'min-height': '30px', 'float': 'left',
+'position': 'unset', 'overflow': 'hidden',
+                    'background-image': 'url({})'.format(self.img),
+                    'background-position': '{} {}'.format(0, 0),
+                    'background-size': '{}px {}px'.format(30, 20),
+        }
+        #item_img.style = style
+        #INVENTARIO.bota(mic)
+        self.do_drag(True)    
+        clone_mic = Elemento(self.img, tit = self.elt.title, drag=True, style=style, cena=INVENTARIO)
+        clone_mic.entra(INVENTARIO)
 
-    def do_texto(self, texto):
+    @property
+    def tit(self):
+        return self.elt.title
+
+    @tit.setter
+    def tit(self, texto):
+        self.elt.title = texto
+
+    def do_texto(self):
         self.texto = Texto(self.cena, texto, foi=self.foi)
 
     def img_prevent(self, ev):
@@ -105,6 +129,7 @@ class Elemento(Element):
         ev.stopPropagation()
         src_id = ev.data['text']
         alert(src_id)
+        self.tit = doc[src_id].title
         doc[src_id].remove()
 
 def geografia(oeste=False):
@@ -121,7 +146,7 @@ def geografia(oeste=False):
         #item_img.style = style
         #INVENTARIO.bota(mic)
         mic.do_drag(True)    
-        clone_mic = Elemento(MIC, tit = "_sweep pan", drag=True, style=style, cena=INVENTARIO)
+        clone_mic = Elemento(MIC, tit = "sweep pan", drag=True, style=style, cena=INVENTARIO)
         clone_mic.entra(INVENTARIO)
         
     def vai_trigo():
@@ -138,13 +163,13 @@ def geografia(oeste=False):
     volcstyle = dict(left = 30, top = 500, width = 100, maxHeight = "120px")
     mic = Elemento(MIC, tit = "sweep pan", drag=False,
         x = 610, y = 100, w = 80, h = 90,
-        cena=s_geo, vai=Texto(s_geo,"please, help me, fix my name",
-        foi=mic_foi ).vai )
+        cena=s_geo, vai=lambda *_: Texto(s_geo,"please, help me, fix my name",
+        foi=mic.foi ).vai() )
     mic.do_drag(False)
     pan = Elemento(PAN, tit = "microscope", drag=False, drop="sweep pan",
         x = 750, y = 110, w = 50, h = 230,
         style=panstyle, cena=e_geo, vai=Texto(e_geo,"please, help me, fix my name",
-        foi=lambda: INVENTARIO.bota(pan)).vai)
+        foi=lambda *_: INVENTARIO.bota(pan)).vai)
     
 
     o_geo.vai() if oeste else s_geo.vai()
