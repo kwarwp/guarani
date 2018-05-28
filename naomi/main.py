@@ -18,11 +18,11 @@ class Elemento(Element):
             cena=INVENTARIO, score={}, drag=False, drop='', **kwargs):
         self._auto_score = self.score if score else self._auto_score
         self.img, self.title = img, tit
-        self._drag = self._over = self._drop = self._dover = lambda: None
+        self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: None
         self.cena = cena
         self.opacity = 0
         self.texto=texto
-        self.vai = vai if vai else Texto(cena,texto, foi=self.foi ).vai
+        self.vai = Texto(cena,texto, foi=self.foi ).vai if texto else vai if vai else self.vai
         # height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
         # height = height[:-2] if isinstance(height, str) and "px" in height else height
         self.style = dict(**PSTYLE)
@@ -132,7 +132,7 @@ class Elemento(Element):
         ev.stopPropagation()
         src_id = ev.data['text']
         self.tit = doc[src_id].title
-        Texto(self.cena,"Finally, my correct name: {}".format(self.tit), foi=self.foi ).vai()
+        Texto(self.cena,"Finally, my correct name: {}".format(self.tit)).vai()
         self.vai = Texto(self.cena, CORRECT.format(self.tit), foi=self.foi ).vai
         doc[src_id].remove()
 
