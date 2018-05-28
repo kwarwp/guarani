@@ -9,7 +9,7 @@ schoolhouse_s = "https://i.imgur.com/A0CmC45.jpg"
 schoolhouse_l = "https://i.imgur.com/wu3DN2C.jpg"
 
 def claudemilsonarevolta():
-    def vai_sckoolhouse
+    def vai_sckoolhouse():
         from naomi.main import geografia
         geografia()
         INVENTARIO.inicia()
