@@ -1,8 +1,8 @@
 # grete.courtney.main.py
-from _spy.vitollino.main import Cena,Elemento,Texto,STYLE
+from _spy.vitollino.main import Cena,Elemento,Texto,STYLE,Dragger, Droppable, INVENTARIO
 STYLE["width"] = 800
+STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
-toy = "https://i.imgur.com/57cOaZ9.jpg"
 sckoolhouse = "https://i.imgur.com/oXsdN2c.jpg"
 
 def claudemilsonarevolta():
