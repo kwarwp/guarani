@@ -4,9 +4,9 @@ STYLE["width"] = 800
 STYLE["height"] = "600px"
 children = "https://i.imgur.com/4fTrn8X.jpg"
 schoolhouse_n = "https://i.imgur.com/F8vDljG.jpg"
-schoolhouse_o = "https://i.imgur.com/VvB1JWN.jpg
+schoolhouse_o = "https://i.imgur.com/VvB1JWN.jpg"
 schoolhouse_s = "https://i.imgur.com/A0CmC45.jpg"
-schoolhouse_l = "https://i.imgur.com/wu3DN2C.jpg
+schoolhouse_l = "https://i.imgur.com/wu3DN2C.jpg"
 
 def claudemilsonarevolta():
     def vai_sckoolhouse
