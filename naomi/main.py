@@ -67,6 +67,7 @@ class Elemento(Element):
         #item_img.style = style
         #INVENTARIO.bota(mic)
         self.do_drag(False)
+        Texto(self.cena,"Finally,got my correct name: {}".format(self.tit)).vai()
         _texto = self.texto if self.tit == self.title else CORRETO.format(self.tit)
         self.vai = Texto(self.cena, _texto).vai
 
@@ -138,7 +139,7 @@ class Elemento(Element):
         self.tit = tit
         Texto(self.cena,"Finally, my correct name: {}".format(self.tit), foi=self.foi).vai()
         self.vai = Texto(self.cena, CORRECT.format(self.tit) ).vai
-        #doc[src_id].remove()
+        doc[src_id].remove()
 
 def geografia(oeste=False):
     def mic_foi():
