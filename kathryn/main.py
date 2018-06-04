@@ -1,18 +1,24 @@
 # grete.kathryn.main.py
-from _spy.vitollino.main import Cena,Elemento,Texto, INVENTARIO
+from _spy.vitollino.main import Cena,Elemento,Texto, INVENTARIO, STYLE
+STYLE.update(width=800, height="600px")
 CLASS1 = "https://i.imgur.com/KsJNT1W.jpg"
-CLASS2 = "https://i.imgur.com/xJWIH1J.jpg"
+CLASS2 = "https://i.imgur.com/ITXdLzJ.jpg"  # xJWIH1J.jpg"
 CLASS3 = "https://i.imgur.com/P3iSUby.jpg"
 CLASS4 = "https://i.imgur.com/m3UOcXX.jpg"
 CORACAO = "https://i.imgur.com/6UKpUyW.jpg"
 GLOBOS = "https://i.imgur.com/tzt1Ch4.jpg"
 LEON   = "https://i.imgur.com/zUhR9wk.jpg"
 def aventurasnaescola():
+    def gogeo(): 
+        from naomi.main import geo_west
+        geo_west()
+    
     class1 = Cena (img = CLASS1)
     class2 = Cena (img = CLASS2)
     class3 = Cena (img = CLASS3)
     class4 = Cena (img = CLASS4)
     coracao = Cena (img = CORACAO)
+    meio.vai = gogeo
     INVENTARIO.inicia()
     class1 = Cena(CLASS1)
     class2 = Cena(CLASS2, esquerda=class1)
@@ -24,7 +30,7 @@ def aventurasnaescola():
     leon = Elemento(img = LEON, tit = "leon", style = dict(left = 350, top = 60, widht = 60, height = 200))
     leon.entra(class1)
     globos.entra(class1)
-    txtleon = Texto(class1,"Eu quero viajar para cÃ¡!!")
+    txtleon = Texto(class1,"Eu quero viajar para cÃÂ¡!!")
     globos.entra(class2)
     leon.entra(class2)
     txtglobos = Texto(class2,"Ei,cuidado!!")
