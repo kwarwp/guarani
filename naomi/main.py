@@ -17,7 +17,7 @@ class Elemento(Element):
             x=0, y=0, w=100, h=100, texto='',
             cena=INVENTARIO, score={}, drag=False, drop='', **kwargs):
         self._auto_score = self.score if score else self._auto_score
-        self.img, self.title = img, tit
+        self.img, self.title, self.real = img, tit, drop
         self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: None
         self.cena = cena
         self.opacity = 0
@@ -34,7 +34,7 @@ class Elemento(Element):
         })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
-        self.elt = html.DIV(Id=tit, title=tit, style=self.style)
+        self.elt = html.DIV(Id=tit+drop, title=tit, style=self.style)
         self.xy = (-111, -111)
         self.scorer = dict(ponto=1, valor=cena.nome, carta=tit or img, casa=self.xy, move=None)
         self.scorer.update(score)
@@ -131,10 +131,14 @@ class Elemento(Element):
         ev.preventDefault()
         ev.stopPropagation()
         src_id = ev.data['text']
-        self.tit = doc[src_id].title
-        Texto(self.cena,"Finally, my correct name: {}".format(self.tit)).vai()
-        self.vai = Texto(self.cena, CORRECT.format(self.tit), foi=self.foi ).vai
-        doc[src_id].remove()
+        tit = doc[src_id].title
+        if tit != self.real:
+            Texto(self.cena,"Hey, this is not my name: {}".format(tit)).vai()
+            return False
+        self.tit = tit
+        Texto(self.cena,"Finally, my correct name: {}".format(self.tit), foi=self.foi).vai()
+        self.vai = Texto(self.cena, CORRECT.format(self.tit) ).vai
+        #doc[src_id].remove()
 
 def geografia(oeste=False):
     def mic_foi():
