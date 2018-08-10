@@ -111,3 +111,14 @@
         self.fala('olá a todos')
         self.direita()
     '''},
+{'jogo': 666 := ['__class__', '__eq__'], 'date': 'Fri Aug 10 2018 16:27:27.688 GMt-0300 (-03) -X- Kwarwp -X-',
+'code': '''class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+    '''},
