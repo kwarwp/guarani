@@ -1,5 +1,5 @@
 
-{'date': 'Fri Aug 10 2018 14:44:18.425 GMt-0300 (-03) -X- Kwarwp -X-',
+{'date': 'Fri Aug 10 2018 14:46:23.27 GMt-0300 (-03) -X- Kwarwp -X-',
 'error': '''class Tchuk(Kuarup):
     """ Tchuk tenta proteger o pajé limpando a aldeia.
     """
@@ -14,4 +14,7 @@
         self.direita()
         self.direita()
         self.anda()
+        self.esquerda()
+        self.larga()
+        self.direita()
     '''},
