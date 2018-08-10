@@ -37,3 +37,14 @@
         self.larga()
         self.direita()
     '''},
+{'date': 'Fri Aug 10 2018 14:52:28.749 GMt-0300 (-03) -X- Kwarwp -X-',
+'error': '''class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+    '''},
