@@ -168,4 +168,15 @@
         self.direita()
         self.pega()
         # foi990009999
+    class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.pega()
+        # foi----
     
