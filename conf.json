@@ -1586,4 +1586,24 @@
             self.esquerda()
             self.larga()
             self.esquerda()
+            self.esquerda()}, {'jogo': 000: = ,  'Sat Oct 20 2018 17:56:37.496 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando de repetição para
+        remover cada pedra e chegar na oca.
+        for cada_passo in range(4):
+            self.anda()
+            self.pega()
+            # .....
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        for cada_passo in range(9):
+            self.anda()
+            self.pega()
             self.esquerda()
+            self.esquerda()
+            self.larga()
+            self.esquerda()
+            self.esquerda()
+        for i in range(3):
+            self.anda()
