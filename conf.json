@@ -2269,4 +2269,22 @@
         self.direita()
         self.caminha_por_um_corredor(13)
         
+    }, {'jogo': 000: = ,  'Sat Oct 20 2018 18:37:23.858 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando if para saber se tem um obstáculo à frente.
+        Volte e tente outro caminho
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.esquerda()
+        self.anda()
+        self.esquerda()
+        if self.olha() == 'livre':
+            self.termina()
+        else:
+          self.esquerda()
+          self.anda()
+          self.anda()
+          self.direita()
+          
+          
     
