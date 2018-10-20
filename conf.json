@@ -2508,4 +2508,11 @@
     def define_comportamento(self):
         self.fala('olá a todos')
         self.direita()
+    }, {'jogo': 000: = ,  'Sat Oct 20 2018 18:45:56.201 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando if para saber se tem um obstáculo à frente.
+        Volte e tente outro caminho
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
     
