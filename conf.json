@@ -1877,4 +1877,22 @@
         self.caminha_por_um_corredor()
         # faça mais comandos até completar o Caracol
         # mas o melhor seria usar um for
-    
+    }, {'jogo': 000: = ,  'Sat Oct 20 2018 18:14:17.323 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk tenta proteger o pajé limpando a aldeia.
+    """
+    def define_comportamento(self):
+        self.fala('olá meu povo da aldeia')
+        self.direita()
+        self.anda()
+        self.pega()
+        self.esquerda()
+        for i in range(3):
+            self.anda() 
+        self.esquerda()
+        self.anda()
+        self.larga()
+        self.direita()
+        self.direita()
+        for i in range(3):
+            self.anda() 
+              
