@@ -1663,4 +1663,25 @@
         self.direita()
         self.caminha(12)
         
+    }, {'jogo': 000: = ,  'Sat Oct 20 2018 18:03:08.132 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Crie um novo comportamento que
+        possa caminhar por um corredor.
+    """
+    def caminha(self, num_passos):
+        for i in range(num_passos):
+          self.anda()
+        
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.caminha(11)  
+        self.esquerda()
+        self.caminha(4)
+        self.esquerda()
+        self.caminha(11)
+        self.direita()
+        self.caminha(4)
+        self.direita()
+        self.caminha(12)
+        
     
