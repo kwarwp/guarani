@@ -1981,4 +1981,21 @@
         self.direita()
         self.caminha_por_um_corredor(13)
         
+    }, {'jogo': 000: = ,  'Sat Oct 20 2018 18:17:44.556 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comportamento que pode caminhar por um corredor.
+        Ajuste para que funcione no Caracol.
+        Use o comando self.olhe() para saber
+         se chegou ao fim do corredor.
+    """
+    def caminha_por_um_corredor(self, num):
+        for i in range(num):
+            while self.olha == 'livre':
+                self.anda()
+            self.esquerda()
+        
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.caminha_por_um_corredor(13)
+        
     
