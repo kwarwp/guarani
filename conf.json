@@ -3691,4 +3691,18 @@
         self.direita()
         self.caminha_por_um_corredor(13)
         
+    }, {'jogo': 000: = ,  'Mon Oct 29 2018 15:52:31.401 GMt-0300 (Horário Padrão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk tenta proteger o pajé limpando a aldeia.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.anda()
+        self.pega()
+        self.esquerda()
+        self.esquerda()
+        self.larga()
+        self.direita()
+        self.direita()
+        self.anda()
     
