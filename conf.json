@@ -4447,4 +4447,14 @@
     def define_comportamento(self):
         self.fala('olá a todos')
         self.direita()
-        self.anda(). for 15 in range()
+        self.anda(). for 15 in range()}, {'jogo': 000: = ,  'Fri Nov 23 2018 13:17:03.105 GMt-0200 (Horário de Verão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando de repetição para
+        repetir o comando self.anda().
+        for cada_passo in range(4):
+            self.anda()
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        for cada_passo in range(15):
+            self.anda()
