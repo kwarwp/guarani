@@ -31843,4 +31843,27 @@
         for quantos_passos in range(11):
           self.anda()# na verdade não é dois!!
         # faça mais comandos até completar o Zigue Zaqgue
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:36:26.130 GMt-0200 (BRST) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando de repetição para
+        remover cada pedra e chegar na oca.
+        for cada_passo in range(4):
+            self.anda()
+            self.pega()
+            # .....
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        for cada_passo in range(4):
+            self.anda()
+            self.pega()
+            self.esquerda()
+            self.anda()
+            self.larga()
+            self.esquerda()
+            self.anda()
+            # Coloque aqui algo que largue
+            # a  pedra atrás do índio
+            # e volte ao caminho para
+            # pegar a próxima pedra.
     
