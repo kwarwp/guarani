@@ -17615,4 +17615,17 @@
         self.anda()
         self.empurra()
         
-    
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:18:13.280 GMt-0200 (Horário de Verão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.anda()
+        self.direita()
+        self.anda()
+        self.anda()
+        self.empurre()
+        self.anda()
