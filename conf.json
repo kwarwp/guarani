@@ -30393,4 +30393,34 @@
         self.direita()
         for cada_passo in range(12):
           self.anda()
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:34:22.474 GMt-0200 (BRST) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando de repetição para
+        remover cada pedra e chegar na oca.
+        for cada_passo in range(4):
+            self.anda()
+            self.pega()
+            # .....
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        for cada_passo in range(2):
+            self.anda()
+            self.pega()
+            self.esquerda()
+            self.esquerda()
+            self.anda()
+            self.anda()
+            self.larga()
+            self.direita()
+            self.direita()
+            self.anda()
+            self.anda()
+           
+        
+            # Coloque aqui algo que largue
+            # a  pedra atrás do índio
+            # e volte ao caminho para
+            # pegar a próxima pedra.
+            
     
