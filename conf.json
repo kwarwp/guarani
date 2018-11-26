@@ -23759,4 +23759,29 @@
         self.direita()
         for cada_passo in range(12):
           self.anda()
-    
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:25:59.745 GMt-0200 (-02) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk tenta proteger o pajé limpando a aldeia.
+    """
+    def define_comportamento(self):
+        #self.fala('Test')
+        self.anda()
+        self.direita()
+        self.anda()
+        self.anda()
+        
+        
+        #self.anda()
+        #self.anda()
+        #self.pega()
+        #self.esquerda()
+        #self.anda()
+        #self.anda()
+        #self.anda()
+        #self.esquerda()
+        #self.anda()
+        #self.larga()
+        #self.direita()
+        #self.direita()
+        #self.anda()
+        #self.anda()
+        #self.anda()
