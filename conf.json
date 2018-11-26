@@ -13544,4 +13544,27 @@
         self.direita()
         self.anda()
         
-    
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:12:34.567 GMt-0200 (Horário de Verão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk tenta proteger o pajé limpando a aldeia.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.anda()
+        self.pega()
+        self.esquerda()
+        self.esquerda()
+        
+        
+        self.direita()
+        self.anda()
+        self.anda()
+        self.esquerda()
+        self.anda()
+        self.anda()
+        self.anda()
+        self.esquerda()
+        self.esquerda()
+        self.anda()
+        
+                
