@@ -27542,4 +27542,20 @@
         self.anda()
         self.anda()
         
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:31:05.959 GMt-0200 (BRST) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Crie um novo comportamento que
+        possa caminhar por um corredor.
+    """
+    def caminha_por_um_corredor(self, quantos_passos):
+        for self.anda in range ()
+        
+        pass
+        
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.caminha_por_um_corredor(11)  # na verdade não é dois!!
+        self.esquerda()
+        self.caminha_por_um_corredor(11)  # na verdade não é dois!!
+        # faça mais comandos até completar o Zigue Zaqgue
     
