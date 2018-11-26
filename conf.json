@@ -6771,4 +6771,23 @@
         self.direita()
         self.anda()
         self.anda()
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 00:07:47.309 GMt-0200 (Horário de Verão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Armazene em uma lista onde estão as flores
+        para poder voltar pelo mesmo caminho.
+    """
+    def segue_pelo_caminho(self):
+        # Desenvolva um jeito de seguir pelo caminho.
+        # Guarde as guinadas na lista.
+        guinada = "esquerda"
+        self.caminho_das_flores.append(guinada)
+        
+    def volta_pelo_caminho(self):
+        # Recupere a última guinada do caminho
+        guinada = caminho_das_flores.pop()
+        # Desenvolva um jeito de voltar pelo caminho.
+    
+    def define_comportamento(self):
+        self.caminho_das_flores = []
+        self.fala('olá a todos')
+        self.direita()
     
