@@ -21868,4 +21868,15 @@
             # a  pedra atrás do índio
             # e volte ao caminho para
             # pegar a próxima pedra.
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:23:32.65 GMt-0200 (BRST) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.anda()
+        self.anda()
     
