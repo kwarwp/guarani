@@ -29830,4 +29830,42 @@
         self.esquerda()
         self.caminha_por_um_corredor(2)  # na verdade não é dois!!
         # faça mais comandos até completar o Zigue Zaqgue
-    
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:33:08.91 GMt-0200 (-02) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk tenta proteger o pajé limpando a aldeia.
+    """
+    def define_comportamento(self):
+        #self.fala('Test')
+        self.direita()
+        self.anda()
+        self.anda()
+        self.pega()
+        self.esquerda()
+        self.anda()
+        self.anda()
+        self.anda()
+        self.esquerda()
+        self.anda()
+        self.larga()
+        self.direita()
+        self.anda()
+        self.direita()
+        self.anda()
+        self.anda()
+        self.anda()
+        
+        
+        #self.anda()
+        #self.anda()
+        #self.pega()
+        #self.esquerda()
+        #self.anda()
+        #self.anda()
+        #self.anda()
+        #self.esquerda()
+        #self.anda()
+        #self.larga()
+        #self.direita()
+        #self.direita()
+        #self.anda()
+        #self.anda()
+        #self.anda()
