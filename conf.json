@@ -20104,4 +20104,15 @@
         self.anda()
         
         
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:21:01.240 GMt-0200 (BRST) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.direita()
+        self.direita()
     
