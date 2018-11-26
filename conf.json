@@ -30290,4 +30290,15 @@
         self.esquerda()
         self.caminha_por_um_corredor(2)  # na verdade não é dois!!
         # faça mais comandos até completar o Zigue Zaqgue
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:34:14.808 GMt-0200 (-02) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Tchuk quer chegar na oca mas tem
+        uma pedra no caminho.
+        Use self.empurre() quando estiver
+        de frente para a pedra.
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.anda()
+        self.direita()
+        
     
