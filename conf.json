@@ -20235,4 +20235,17 @@
         self.direita()
         self.esquerda()
         self.anda()
+    }, {'jogo': 000: = ,  'Mon Nov 26 2018 16:21:13.428 GMt-0200 (Horário de Verão de Brasília) -X- Kwarwp -X-', 'code':class Tchuk(Kuarup):
+    """ Use o comando de repetição para
+        repetir o comando self.anda().
+        for cada_passo in range(4):
+            self.anda()
+    """
+    def define_comportamento(self):
+        self.fala('olá a todos')
+        self.direita()
+        self.anda()
+        self.anda()
+        self.anda()
+        self.anda()
     
